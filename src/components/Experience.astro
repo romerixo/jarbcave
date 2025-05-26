@@ -1,0 +1,26 @@
+---
+const { title, dates, duration, company, tags } = Astro.props;
+---
+
+<div class="relative flex gap-5">
+  <div class="flex flex-col shrink-0 items-end before:content-[''] before:absolute before:w-2 before:h-2 before:bg-emerald-300 before:rounded-full before:top-6 before:-right-1 relative pr-5 py-4 border-r-1 border-emerald-300 italic text-sm text-right w-40 whitespace-nowrap">
+    <strong class="text-emerald-300">{company}</strong>
+    <span class="text-xs">{dates}</span>
+    <span class="text-xs">{duration}</span>
+  </div>
+  <div class="py-4">
+    <h3 class="font-bold mb-2">{title}</h3>
+    <!-- tags -->
+    <ul class="flex flex-wrap gap-2 my-2">
+      { 
+        tags.split(',').map((tag: String) => (
+        <li class="px-2 text-xs border border-emerald-300 rounded-full text-emerald-300">{tag.trim()}</li>
+        ))
+      }
+    </ul>
+    
+    <div>
+      <slot />
+    </div>
+  </div>
+</div>

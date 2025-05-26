@@ -1,0 +1,430 @@
+---
+import Experience from '../components/Experience.astro';
+import Formation from '../components/Formation.astro';
+import SkillItem from '../components/SkillItem.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+  <meta slot="head" content="noindex" name="robots" />
+
+  <div class="mt-10 flex flex-col gap-10">
+    <header class="flex">
+      <div class="flex flex-col gap-5">
+        <h1 class="text-2xl font-semibold">Juan Antonio Romero Baeza</h1>
+        <p class="text-lg font-semibold opacity-90">Full Stack & Ciberseguridad</p>
+      </div>
+      <ul class="flex flex-col ml-auto items-end opacity-90">
+        <li>
+          <a href="mailto:jarbsecpro@gmail.com" class="text-sm flex gap-2">
+            <span>jarbsecpro@gmail.com</span>
+            <i class="text-emerald-300">
+              <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+            </i>
+          </a>
+        </li>        
+        <li>
+          <a href="https://t.me/jarbsec" class="text-sm flex gap-2" title="Telegram">
+            <span>t.me/jarbsec</span>
+            <i class="text-emerald-300">
+              <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg>
+            </i>
+          </a>
+        </li>
+
+      </ul>
+    </header>
+  
+    <main class="flex flex-col gap-10">
+
+      <section class="flex flex-col gap-5">
+        <h2 class="text-lg font-semibold uppercase border-l-4 pl-2 border-emerald-500">Sobre mí</h2>
+        <p class="text-sm opacity-90">
+            Más de <b>10 años de experiencia profesional</b> en el sector tecnológico, trabajando en diversas compañías como <b>Full Stack Developer</b>, <b>SysAdmin</b> & <b>Ciberseguridad</b>. Apasionado por el <b>aprendizaje continuo</b> y la <b>innovación</b>, he desarrollado <b>soluciones robustas y escalables</b> utilizando una amplia variedad de <b>tecnologías</b> y <b>frameworks modernos</b>. Mi enfoque se centra en la <b>excelencia técnica</b>, la <b>colaboración en equipo</b> y la <b>entrega de productos de alta calidad</b>, manteniéndome siempre a la vanguardia de las <b>tendencias del desarrollo de software</b>.
+        </p>
+      </section>
+
+      <!-- Experiencia -->
+      <section class="flex flex-col gap-5">
+        <h2 class="text-lg font-semibold uppercase border-l-4 pl-2 border-emerald-500">Experiencia</h2>
+        <ul class="flex flex-col">
+
+          <li>
+            <Experience
+              title="Full Stack, SysAdmin & Ciberseguridad"
+              dates="Julio 2023 - Actualidad"
+              duration="2 años"
+              company="Freelance"
+              tags="Python, Stripe, Next.js, Flask, Django, MongoDB, WordPress, WooCommerce, Web Scraping, Puppeteer, Telegram Bot API, Tailwind CSS, React, VPS"
+            >
+              <ul class="list-disc ml-4 text-sm opacity-90">
+                <li>Desarrollo y gestión de plataformas e-commerce con <b>Woocommerce</b>.</li>
+                <li>Desarrollo en <b>Python</b> de módulo para la sincronización de catálogos con múltiples proveedores en sistemas <b>Wordpress</b>.</li>
+                <li>Desarrollo de <b>proxy reverso</b> para el acceso a servicios de terceros mediante suscripción.</li>
+                <li>Recuperación y eliminación de <b>malware</b> y fortificación de servidor en entornos <b>Linux</b>.</li>
+                <li>Desarrollo de <b>módulos</b> para <b>WordPress</b>.</li>
+                <li>Desarrollo de <b>módulos</b> para el sistema de foro <b>XenForo</b>.</li>
+
+                <li>
+                  <div class="flex flex-col gap-2 mb-4">
+                    <span><b>Proyecto:</b> Plataforma de <b>alertas</b> y <b>analíticas</b> para mercados de segunda mano</span>
+                    <ul class="w-full flex flex-wrap gap-2 list-disc-inline opacity-90 italic text-xs text-emerald-300">
+                      <li>Pyhton</li>
+                      <li>Flask</li>
+                      <li>AlpineJS</li>
+                      <li>Tailwind</li>
+                      <li>Linux</li>
+                      <li>VPS</li>
+                      <li>Supervisor</li>
+                      <li>Stripe</li>
+                      <li>Sentry</li>
+                    </ul>
+                    <p class="text-sm italic opacity-90">
+                      Plataforma web centrada en la configuración de <b>alertas</b> y análisis de <b>histórico</b> para artículos de segunda mano en aplicaciones de compra venta conocidas.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex flex-col gap-2 mb-4">
+                    <span><b>Proyecto:</b> <b>Telegram Bot</b> para sistema de alertas en <b>x.com</b></span>
+                    <ul class="w-full flex flex-wrap gap-2 list-disc-inline opacity-90 italic text-xs text-emerald-300">
+                      <li>Telegram API</li>
+                      <li>Node</li>
+                      <li>VPS</li>
+                      <li>Puppeter</li>
+                      <li>Web Scrapping</li>
+                      <li>PM2</li>
+                    </ul>
+                    <p class="text-sm italic opacity-90">
+                      Bot para Telegram que permite crear y gestionar <b>alertas</b> mediante filtros personalizados para la plataforma <b>x.com</b>.
+                    </p>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="flex flex-col gap-2 mb-4">
+                    <span><b>Proyecto:</b> Plataforma web e-commerce <b>multi-vendedor</b> para artículos de segunda mano.</span>
+                    <ul class="w-full flex flex-wrap gap-2 list-disc-inline opacity-90 italic text-xs text-emerald-300">
+                      <li>Codeigniter</li>
+                      <li>NextJS</li>
+                      <li>Node</li>
+                      <li>Tailwind</li>
+                      <li>Stripe</li>
+                      <li>MongoDB</li>
+                    </ul>
+                    <p class="text-sm italic opacity-90">
+                      Plataforma web similar a <b>Wallapop</b> para la venta de artículos de segunda mano en mercados nicho.
+                    </p>
+                  </div>
+                </li>                
+
+                <li>
+                  <div class="flex flex-col gap-2 mb-4">
+                    <span><b>Proyecto:</b> Plataforma web para la gestión de catálogo de libros.</span>
+                    <ul class="w-full flex flex-wrap gap-2 list-disc-inline opacity-90 italic text-xs text-emerald-300">
+                      <li>Pyhton</li>
+                      <li>Django</li>
+                      <li>MySQL</li>
+                      <li>Linux</li>
+                      <li>VPS</li>
+                    </ul>
+                    <p class="text-sm italic opacity-90">
+                      Aplicación web para la gestión de <b>catálogos de libros</b> enfocada al <b>aprendizaje de idiomas</b>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="flex flex-col gap-2 mb-4">
+                    <span><b>Proyecto:</b> Aplicación web para subida y descarga de archivos mediante pago.</span>
+                    <ul class="w-full flex flex-wrap gap-2 list-disc-inline opacity-90 italic text-xs text-emerald-300">
+                      <li>Codeigniter</li>
+                      <li>NextJS</li>
+                      <li>Linux</li>
+                      <li>VPS</li>
+                      <li>Stripe</li>
+                    </ul>
+                    <p class="text-sm italic opacity-90">
+                      Aplicación web para la subida y descarga de archivos mediante <b>pago único</b>.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </Experience>
+          </li>
+
+          <li>
+            <Experience
+              title="Desarrollador Full Stack"
+              dates="Abril 2019 - Marzo 2022"
+              duration="3 años"
+              company="IMC Worldwide"
+              tags="AWS,PHP,Grafana Loki,AWS/IAM,Stripe,Pentesting,Laravel,VirtualBox,Prestashop"
+            >
+              <ul class="list-disc ml-4 text-sm opacity-90">
+                <li>Desarrollo y gestión de plataformas comerciales con <b>Laravel</b>.</li>
+                <li>Despliegue e integración con <b>Laravel Forge</b>.</li>
+                <li>Uso de <b>Virtual Box</b> y <b>Vagrant</b> Para el desarrollo de proyectos.</li>
+                <li>Despliegue y gestión de proyectos sobre <b>AWS</b> (S3, EC2, RDS).</li>
+                <li>Fortificacion de servidores <b>Windows y Linux</b>.</li>
+                <li>Gestión de <b>backups</b>.</li>
+                <li>Administración de entidades y acceso a recursos sobre <b>AWS</b> con <b>IAM</b>.</li>
+                <li>Monitorización de logs con <b>Grafana Loki</b>. </li>
+                <li><b>Pruebas de intrusión web</b> de ámbito interno.</li>
+                <li>Administracion y desarrollo de plataforma e-commerce con <b>Prestashop</b>.</li>
+                <li>Desarrollo e internacionalización de plataforma gubernamental de transparencia con <b>Laravel</b>.</li>
+              </ul>
+            </Experience>
+          </li>
+
+          <li>
+            <Experience
+              title="Desarrollador Full Stack"
+              dates="Enero 2019 - Marzo 2019"
+              duration="3 meses"
+              company="Pharmacius"
+              tags="PHP,MySQL,Linux,Prestashop"
+            >
+              <ul class="list-disc ml-4 text-sm opacity-90">
+                <li>Aplicaciones en PHP (LAMP stack) para generación y dashboard de analíticas web.</li>
+                <li>Gestión y desarrollo de plataforma e-commerce con Prestashop.</li>
+              </ul>
+            </Experience>
+          </li>
+
+          <li>
+            <Experience
+              title="Desarrollador Full Stack"
+              dates="Enero 2016 - Diciembre 2018"
+              duration="3 años"
+              company="Freelance"
+              tags="Prestashop,MVC,LAMP,PWA,Mobile First,Sails.js"
+            >
+              <ul class="list-disc ml-4 text-sm opacity-90">
+                <li>Desarrollo y gestón de plataformas e-commerce con Prestashop, Woocommerce y Magento.</li>
+                <li>
+                  <div class="flex flex-col gap-2 mb-4">
+                    <span><b>Proyecto:</b> Web de citas</span>
+                    <ul class="flex flex-wrap gap-2 list-disc-inline opacity-90 italic text-xs text-emerald-300">
+                      <li>Stack de desarrollo LAMP</li>
+                      <li>Arquitectura MVC</li>
+                    </ul>
+                    <p class="text-sm italic opacity-90">
+                      Desarrollo de plataforma web de citas similar Badoo desarrollada en el stack LAMP.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex flex-col gap-2 mb-4">
+                    <span><b>Proyecto:</b> App de reviews para restaurantes</span>
+                    <ul class="w-full flex flex-wrap gap-2 list-disc-inline opacity-90 italic text-xs text-emerald-300">
+                      <li>Progressive Web App</li>
+                      <li>Sails.js</li>
+                      <li>MVC</li>
+                      <li>Mobile First</li>
+                      <li>Cache Storage API</li>
+                      <li>Service Worker</li>
+                    </ul>
+                    <p class="text-sm italic opacity-90">
+                      Desarrollo de una <b>Progressive Web App (PWA)</b> enfocada en reseñas para restaurantes.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </Experience>
+          </li>
+
+          <li>
+            <Experience
+              title="Desarrollador .NET"
+              dates="Abril - Junio 2015"
+              duration="3 meses"
+              company="CSC Isoft Sanidad S.A"
+              tags="C#,SQL Server,.NET"
+            >
+              <ul class="list-disc ml-4 text-sm opacity-90">
+                <li>Desarrollo de aplicación para gestión y generación de informes en C Sharp.</li>
+                <li>Confeccion de scripts en Transact-SQL para validación de datos en Microsoft SQL Server.</li>
+              </ul>
+            </Experience>
+          </li>
+
+          <li>
+            <Experience
+              title="Técnico de Sistemas y Redes"
+              dates="Abril 2011 - Junio 2011"
+              duration="3 meses"
+              company="Informática Galindo"
+              tags="Windows,Linux,Redes"
+            >
+              <ul class="list-disc ml-4 text-sm opacity-90">
+                <li>Desarrollo de plataforma e-learning con Moodle.</li>
+                <li>Instalación y administracion de sistemas (Windows & Linux).</li>
+                <li>Montaje y reparación de equipos.</li>
+                <li>Instalación y administración de redes.</li>
+              </ul>
+            </Experience>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- Formación -->
+      <section class="flex flex-col gap-5">
+        <h2 class="text-lg font-semibold uppercase border-l-4 pl-2 border-emerald-500">Formación</h2>
+
+        <ul class="flex flex-col gap-8">
+
+          <li>
+            <Formation
+              title="OSCP"
+              subtitle="Offensive Security Certified Professional | 2024"
+            >
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-certificate">
+                <circle cx="12" cy="12" r="7" />
+                <path d="M12 17v4m0 0l2-2m-2 2l-2-2" />
+                <path d="M12 7v2" />
+                <path d="M7 12h2" />
+                <path d="M15 12h2" />
+                <path d="M12 15v2" />
+              </svg>
+              
+              <p>
+                Curso y certificación en <b>hacking ético</b> y <b>pruebas de penetración</b>, centrado en la <b>explotación de vulnerabilidades</b> en entornos reales. Incluye técnicas avanzadas de <b>reconocimiento</b>, <b>explotación</b>, <b>post-explotación</b> y redacción de <b>informes profesionales</b>. Formación reconocida internacionalmente en el ámbito de la <b>ciberseguridad ofensiva</b>.
+              </p>
+            </Formation>
+          </li>
+
+          <li>
+            <Formation
+              title="Hack The Box"
+              subtitle="Plataforma de formación en ciberseguridad | 2024"
+            >
+              <svg slot="icon" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M11.996 0a1.119 1.119 0 0 0-.057.003.9.9 0 0 0-.236.05.907.907 0 0 0-.165.079L1.936 5.675a.889.889 0 0 0-.445.77v11.111a.889.889 0 0 0 .47.784l9.598 5.541.054.029v.002a.857.857 0 0 0 .083.035l.012.004c.028.01.056.018.085.024.01.001.011.003.016.004a.93.93 0 0 0 .296.015.683.683 0 0 0 .086-.015c.01 0 .011-.002.016-.004a.94.94 0 0 0 .085-.024l.012-.004a.882.882 0 0 0 .083-.035v-.002a1.086 1.086 0 0 0 .054-.029l9.599-5.541a.889.889 0 0 0 .469-.784V6.48l-.001-.026v-.008a.889.889 0 0 0-.312-.676l-.029-.024c0-.002-.01-.005-.01-.007a.899.899 0 0 0-.107-.07L12.453.127A.887.887 0 0 0 11.99 0zm.01 2.253c.072 0 .144.019.209.056l6.537 3.774a.418.418 0 0 1 0 .724l-6.537 3.774a.418.418 0 0 1-.418 0L5.26 6.807a.418.418 0 0 1 0-.724l6.537-3.774a.42.42 0 0 1 .209-.056zm-8.08 6.458a.414.414 0 0 1 .215.057l6.524 3.766a.417.417 0 0 1 .208.361v7.533a.417.417 0 0 1-.626.361l-6.523-3.766a.417.417 0 0 1-.209-.362V9.13c0-.241.196-.414.41-.418zm16.16 0c.215.004.41.177.41.418v7.532a.42.42 0 0 1-.208.362l-6.524 3.766a.417.417 0 0 1-.626-.361v-7.533c0-.149.08-.286.209-.36l6.523-3.767a.415.415 0 0 1 .216-.057z"/></svg>
+              
+              <p>
+                Plataforma de formación en <b>ciberseguridad</b> que ofrece <b>laboratorios prácticos</b> y <b>retos de hacking ético</b>. Permite a los usuarios mejorar sus habilidades en <b>pruebas de penetración</b>, <b>explotación de vulnerabilidades</b> y <b>técnicas de seguridad</b> a través de un entorno seguro y controlado. Ideal para quienes buscan aprender y practicar habilidades de <b>ciberseguridad</b> en un entorno realista.
+              </p>
+            </Formation>
+          </li>
+
+          <li>
+            <Formation
+              title="Exploit Education"
+              subtitle="Técnicas de explotación de memoria | 2023"
+            >
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bomb"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.349 5.349l3.301 3.301a1.2 1.2 0 0 1 0 1.698l-.972 .972a7.5 7.5 0 1 1 -5 -5l.972 -.972a1.2 1.2 0 0 1 1.698 0z" /><path d="M17 7l1.293 -1.293a2.414 2.414 0 0 0 .707 -1.707a1 1 0 0 1 1 -1h1" /><path d="M7 13a3 3 0 0 1 3 -3" /></svg>
+
+              <p>
+                Plataforma de aprendizaje práctico centrada en la <b>seguridad informática</b>, que ofrece <b>laboratorios</b> y <b>retos</b> diseñados para enseñar conceptos clave sobre <b>vulnerabilidades</b> y <b>explotación</b>, especialmente en técnicas como <b>buffer overflow</b> y <b>explotación de memoria</b>. Ideal para quienes desean profundizar en la comprensión y práctica de <b>ataques</b> y <b>defensas</b> a bajo nivel.
+              </p>
+            </Formation>
+          </li>
+
+          <li>
+            <Formation
+              title="OverTheWire"
+              subtitle="Retos de ciberseguridad y hacking ético | 2023"
+            >
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-tank"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" /><path d="M6 12l1 -5h5l3 5" /><path d="M21 9l-7.8 0" /></svg>
+
+              <p>
+                Plataforma de retos de <b>ciberseguridad</b> que permite a los usuarios practicar habilidades de <b>hacking ético</b> y <b>resolución de problemas</b> en un entorno seguro. Ofrece una amplia variedad de <b>desafíos</b> que abarcan desde la <b>explotación de vulnerabilidades</b> hasta la <b>criptografía</b>, ideal para quienes buscan mejorar sus <b>habilidades prácticas</b> en ciberseguridad.
+              </p>
+            </Formation>
+          </li>
+
+          <li>
+            <Formation
+              title="Mobile Web Specialist"
+              subtitle="Google & Udacity Nanodegree | Marzo - Agosto 2018, 6 meses"
+            >
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" /><path d="M11 4h2" /><path d="M12 17v.01" /></svg>
+              
+              <p>
+                Certificación intensiva orientada al desarrollo de aplicaciones web móviles modernas, abarcando temas como <b>rendimiento</b>, <b>accesibilidad</b>, <b>responsive design</b>, <b>optimización</b> y buenas prácticas en <b>Progressive Web Apps (PWA)</b>. Enfocada en el uso de <b>tecnologías web actuales</b> para crear experiencias <b>rápidas</b> y de <b>alta calidad</b> en dispositivos móviles.
+              </p>
+            </Formation>
+          </li>
+
+          <li>
+            <Formation
+              title="Técnico superior en desarrollo de aplicaciones multiplataforma"
+              subtitle="CES San José | 2013 - 2015"
+            >
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
+              
+              <p>
+                Ciclo formativo de grado superior enfocado en el <b>diseño</b>, <b>desarrollo</b> y <b>mantenimiento</b> de <b>aplicaciones informáticas</b> para diferentes plataformas (<b>escritorio</b>, <b>web</b> y <b>móviles</b>). Incluye <b>programación orientada a objetos</b>, <b>bases de datos</b>, <b>interfaces gráficas</b>, <b>acceso a datos</b>, <b>despliegue</b> y <b>buenas prácticas</b> en el <b>ciclo de vida del software</b>.
+              </p>
+            </Formation>
+          </li>
+
+          <li>
+            <Formation
+              title="Técnico en sistemas microinformáticos y redes"
+              subtitle="IES Jorge Guillén | 2009 - 2011"
+            >
+              <svg slot="icon" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-tool"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" /></svg>
+              
+              <p>
+                Ciclo formativo de grado medio centrado en la <b>instalación</b>, <b>configuración</b> y <b>mantenimiento</b> de <b>sistemas informáticos</b> y <b>redes locales</b>. Incluye conocimientos en <b>hardware</b>, <b>software</b>, <b>sistemas operativos</b>, <b>redes</b>, <b>seguridad</b> y <b>soporte técnico</b> tanto en entornos domésticos como empresariales.
+              </p>
+            </Formation>
+          </li>
+          
+        </ul>
+      </section>
+
+      <!-- Skills -->
+      <section class="flex flex-col gap-5">
+        <h2 class="text-lg font-semibold uppercase border-l-4 pl-2 border-emerald-500">Skills</h2>
+
+        <ul class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <li>
+            <SkillItem title="Desarrollo" score="100">
+              <ul class="px-2 flex flex-col gap-2 items-center">
+                <li>Javascript <b class="text-emerald-300">•</b> Python <b class="text-emerald-300">•</b> PHP</li>
+                <li>MySQL <b class="text-emerald-300">•</b> MongoDB <b class="text-emerald-300">•</b> Redis</li>
+                <li>NextJS <b class="text-emerald-300">•</b> Astro <b class="text-emerald-300">•</b> Laravel <b class="text-emerald-300">•</b> Codeigniter</li>
+                <li>Git <b class="text-emerald-300">•</b> CI/CD GitHub Actions <b class="text-emerald-300">•</b> Docker</li>
+              </ul>
+            </SkillItem>
+          </li>
+          <li>
+            <SkillItem title="Sistemas" score="80">
+              <ul class="px-2 flex flex-col gap-2 items-center">
+                <li>SSH <b class="text-emerald-300">•</b> Bash <b class="text-emerald-300">•</b> Powershell</li>
+                <li>AWS <b class="text-emerald-300">•</b> Digital Ocean <b class="text-emerald-300">•</b> Docker</li>
+                <li>Windows <b class="text-emerald-300">•</b> Linux <b class="text-emerald-300">•</b> Active Directory</li>
+              </ul>
+            </SkillItem>
+          </li>
+          <li>
+            <SkillItem title="Ciberseguridad" score="70">
+              <ul class="px-2 flex flex-col gap-2 items-center">
+                <li>OSCP <b class="text-emerald-300">•</b> Red Team <b class="text-emerald-300">•</b> CTFs</li>
+                <li>Kali Linux <b class="text-emerald-300">•</b> Metasploit <b class="text-emerald-300">•</b> Burp Suite</li>
+                <li>AWS IAM <b class="text-emerald-300">•</b> Nmap <b class="text-emerald-300">•</b> CVEs</li>
+              </ul>
+            </SkillItem>
+          </li>
+          <li>
+            <SkillItem title="Diseño" score="60">
+              <ul class="px-2 flex flex-col gap-2 items-center">
+                <li>HTML<b class="text-emerald-300">•</b> CSS <b class="text-emerald-300">•</b> Tailwind</li>
+                <li>Figma <b class="text-emerald-300">•</b> Canva <b class="text-emerald-300">•</b> Ilustrator <b class="text-emerald-300">•</b> Photoshop</li>
+                <li>Blender <b class="text-emerald-300">•</b> SolidWork <b class="text-emerald-300">•</b> Fusion 360</li>
+              </ul>
+            </SkillItem>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+</Layout>

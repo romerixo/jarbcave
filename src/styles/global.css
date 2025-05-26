@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.list-disc-inline li {
+  @apply after:content-['•'] after:ml-2;
+}
+
+.list-disc-inline li:last-child {
+  @apply after:content-none;
+}

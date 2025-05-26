@@ -1,3 +1,8 @@
+---
+import './src/styles/global.css'
+import logo from './src/assets/logo.png'
+import Header from '../components/Header.astro'
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,10 +10,22 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{Astro.props.title || 'jarbcave.com'}</title>
+		<slot name="head" />
 	</head>
-	<body>
-		<slot />
+	<body class="bg-zinc-800 text-zinc-100">
+
+		<Header />
+
+		<main class="mt-10 w-full print:mt-0 px-4 py-2 lg:w-5xl mx-auto">
+			<slot />
+		</main>
+
+		<footer class="py-20 text-sm flex opacity-70 w-full justify-center">
+			<p>
+				jarbcave.com © 2025 Todos los derechos reservados
+			</p>
+		</footer>
 	</body>
 </html>
 

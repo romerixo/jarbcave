@@ -1,0 +1,20 @@
+---
+const { icon, title, subtitle } = Astro.props;
+---
+
+<div class="flex gap-2">
+
+  <div class="w-20 h-20 flex items-start justify-center text-emerald-300">
+    <slot name="icon">
+      {icon}
+    </slot>
+  </div>
+
+  <div class="flex flex-col gap-2">
+    <h3 class="font-semibold">{title}</h3>
+    <span class="text-xs italic opacity-70">{subtitle}</span>
+    <div class="text-sm opacity-90">
+      <slot />
+    </div>
+  </div>
+</div>
